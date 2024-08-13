@@ -4,5 +4,10 @@ You want to back up a large amount of data, (e.g. to a network share) and you wa
 
 Use [`rsync(1)`](https://www.samba.org/ftp/rsync/rsync.html), e.g.:
 ```
-$ rsync --checksum --recursive --compress --verbose ~/Data /mnt/network/Data_$(date -I)
+$ rsync --checksum --recursive --compress --verbose --backup ~/Data /mnt/network/Data
+```
+
+Or, if you want to save multiple backup versions:
+```
+$ rsync --checksum --recursive --compress --verbose --backup-dir=/mnt/network/Data_$(date -I)
 ```
