@@ -2,7 +2,7 @@
 
 ## Terminal
 
-```
+```bash
 # Find out what char Ctrl-Backspace emits (usually '^H')
 $ stty werase ''    # Disable 'werase'
 $ ^H^H^H            # Press Ctrl-Backspace a few times
@@ -11,7 +11,7 @@ $ stty werase '^H'  # So we change 'werase' to '^H'
 
 ## Vim
 
-```
+```vimscript
 " In Vim Ctrl-Backspace should always be equivalent to Ctrl-H. So we remap
 " Ctrl-H (i.e. Ctrl-Backspace) to Ctrl-W anywhere we're inserting text.
 :noremap! <C-H> <C-W>

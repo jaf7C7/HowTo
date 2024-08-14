@@ -1,6 +1,5 @@
 # How To Mount A Network Share On Linux
 
-
 Using the `mount(1)` command:
 ```
 $ sudo mkdir /mnt/network
@@ -15,6 +14,6 @@ username=jfox
 password=<password>
 ```
 
-Just make sure to do `chown 600 <creds>` to make it secure.
+Just make sure to do `chmod 400 <creds>` to make it read-only and secure.
 
 [Source](https://www.linode.com/docs/guides/linux-mount-smb-share/)
