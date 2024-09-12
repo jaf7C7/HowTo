@@ -13,6 +13,6 @@ $ rsync -crzbv ~/Data /mnt/network/
 ```
 
 Or, if you want to save multiple backup versions:
-``shell
+```shell
 $ rsync -crzv --backup-dir=/mnt/network/ --suffix="_$(date -I)" ~/Data /mnt/network
 ```
