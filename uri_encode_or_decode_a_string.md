@@ -1,4 +1,4 @@
-# URI Encode Or Decode A String
+# How To URI Encode Or Decode A String
 
 Javascript has built-in functions for this.
 

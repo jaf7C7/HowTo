@@ -1,4 +1,4 @@
-# HTML-Escape A String
+# How To HTML-Escape A String
 
 Run the following in the *browser console* (it won't work in `node`):
 
